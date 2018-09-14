@@ -43,7 +43,7 @@ endif
 GO_BUILD_VER?=v0.17
 
 # Select which release branch to test.
-RELEASE_BRANCH?=master
+RELEASE_BRANCH?=release-v3.2
 
 CALICO_BUILD = calico/go-build:$(GO_BUILD_VER)
 
@@ -108,7 +108,7 @@ LIBCALICO_VERSION?=$(shell git ls-remote git@github.com:projectcalico/libcalico-
 update-libcalico:
 	$(DOCKER_GO_BUILD) sh -c '\
         echo "Updating libcalico to $(LIBCALICO_VERSION) from $(LIBCALICO_REPO)"; \
-        export OLD_VER=$$(grep --after 50 libcalico-go glide.yaml |grep --max-count=1 --only-matching --perl-regexp "version:\s*\K[\.0-9a-z]+") ;\
+        export OLD_VER=$$(grep --after 50 libcalico-go glide.yaml |grep --max-count=1 --only-matching --perl-regexp "version:\s*\K[^\s]+") ;\
         echo "Old version: $$OLD_VER";\
         if [ $(LIBCALICO_VERSION) != $$OLD_VER ]; then \
             sed -i "s/$$OLD_VER/$(LIBCALICO_VERSION)/" glide.yaml && \
