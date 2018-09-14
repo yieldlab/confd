@@ -43,7 +43,7 @@ endif
 GO_BUILD_VER?=v0.17
 
 # Select which release branch to test.
-RELEASE_BRANCH?=master
+RELEASE_BRANCH?=release-v3.2
 
 CALICO_BUILD = calico/go-build:$(GO_BUILD_VER)
 
