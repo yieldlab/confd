@@ -43,13 +43,13 @@ endif
 GO_BUILD_VER?=v0.17
 
 # Select which release branch to test.
-RELEASE_BRANCH?=master
+RELEASE_BRANCH?=release-v3.3
 
 CALICO_BUILD = calico/go-build:$(GO_BUILD_VER)
 
-CALICOCTL_VER=master
+CALICOCTL_VER=release-v3.3
 CALICOCTL_CONTAINER_NAME=calico/ctl:$(CALICOCTL_VER)-$(ARCH)
-TYPHA_VER=master
+TYPHA_VER=release-v3.3
 TYPHA_CONTAINER_NAME=calico/typha:$(TYPHA_VER)-$(ARCH)
 K8S_VERSION?=v1.11.3
 ETCD_VER?=v3.3.7
@@ -104,7 +104,7 @@ vendor: glide.lock
 
 # Default the libcalico repo and version but allow them to be overridden
 LIBCALICO_REPO?=github.com/projectcalico/libcalico-go
-LIBCALICO_VERSION?=$(shell git ls-remote git@github.com:projectcalico/libcalico-go master 2>/dev/null | cut -f 1)
+LIBCALICO_VERSION?=$(shell git ls-remote git@github.com:projectcalico/libcalico-go $(RELEASE_BRANCH) 2>/dev/null | cut -f 1)
 
 ## Update libcalico pin in glide.yaml
 update-libcalico:
