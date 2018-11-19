@@ -584,7 +584,7 @@ func (c *client) OnUpdates(updates []api.Update) {
 	needUpdatePeersV1 := false
 
 	for _, u := range updates {
-		log.Infof("Update: %#v", u)
+		log.Debugf("Update: %#v", u)
 
 		// confd now receives Nodes and BGPPeers as v3 resources.
 		//
