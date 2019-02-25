@@ -44,9 +44,9 @@ GO_BUILD_VER?=v0.20
 
 CALICO_BUILD = calico/go-build:$(GO_BUILD_VER)
 
-CALICOCTL_VER=master
+CALICOCTL_VER=release-v3.4
 CALICOCTL_CONTAINER_NAME=calico/ctl:$(CALICOCTL_VER)-$(ARCH)
-TYPHA_VER=master
+TYPHA_VER=release-v3.4
 TYPHA_CONTAINER_NAME=calico/typha:$(TYPHA_VER)-$(ARCH)
 K8S_VERSION?=v1.11.3
 ETCD_VER?=v3.3.7
@@ -121,7 +121,7 @@ update-libcalico:
 
 # Default the typha repo and version but allow them to be overridden
 TYPHA_REPO?=github.com/projectcalico/typha
-TYPHA_VERSION?=$(shell git ls-remote git@github.com:projectcalico/typha master 2>/dev/null | cut -f 1)
+TYPHA_VERSION?=$(shell git ls-remote git@github.com:projectcalico/typha release-v3.4 2>/dev/null | cut -f 1)
 
 ## Update typha pin in glide.yaml
 update-typha:
