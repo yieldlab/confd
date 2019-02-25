@@ -44,9 +44,9 @@ GO_BUILD_VER?=v0.20
 
 CALICO_BUILD = calico/go-build:$(GO_BUILD_VER)
 
-CALICOCTL_VER=master
+CALICOCTL_VER=release-v3.4
 CALICOCTL_CONTAINER_NAME=calico/ctl:$(CALICOCTL_VER)-$(ARCH)
-TYPHA_VER=master
+TYPHA_VER=release-v3.4
 TYPHA_CONTAINER_NAME=calico/typha:$(TYPHA_VER)-$(ARCH)
 K8S_VERSION?=v1.11.3
 ETCD_VER?=v3.3.7
@@ -100,31 +100,12 @@ vendor: glide.lock
 	mkdir -p $(HOME)/.glide
 	$(DOCKER_GO_BUILD) glide install -strip-vendor
 
-# Default the libcalico repo and version but allow them to be overridden
-LIBCALICO_BRANCH?=$(shell git rev-parse --abbrev-ref HEAD)
-LIBCALICO_REPO?=github.com/projectcalico/libcalico-go
-LIBCALICO_VERSION?=$(shell git ls-remote git@github.com:projectcalico/libcalico-go $(LIBCALICO_BRANCH) 2>/dev/null | cut -f 1)
-
-## Update libcalico pin in glide.yaml
-update-libcalico:
-	$(DOCKER_GO_BUILD) sh -c '\
-        echo "Updating libcalico to $(LIBCALICO_VERSION) from $(LIBCALICO_REPO)"; \
-        export OLD_VER=$$(grep --after 50 libcalico-go glide.yaml |grep --max-count=1 --only-matching --perl-regexp "version:\s*\K[^\s]+") ;\
-        echo "Old version: $$OLD_VER";\
-        if [ $(LIBCALICO_VERSION) != $$OLD_VER ]; then \
-            sed -i "s/$$OLD_VER/$(LIBCALICO_VERSION)/" glide.yaml && \
-            if [ $(LIBCALICO_REPO) != "github.com/projectcalico/libcalico-go" ]; then \
-              glide mirror set https://github.com/projectcalico/libcalico-go $(LIBCALICO_REPO) --vcs git; glide mirror list; \
-            fi;\
-          glide up --strip-vendor || glide up --strip-vendor; \
-        fi'
-
 # Default the typha repo and version but allow them to be overridden
 TYPHA_REPO?=github.com/projectcalico/typha
-TYPHA_VERSION?=$(shell git ls-remote git@github.com:projectcalico/typha master 2>/dev/null | cut -f 1)
+TYPHA_VERSION?=$(shell git ls-remote git@github.com:projectcalico/typha release-v3.4 2>/dev/null | cut -f 1)
 
-## Update typha pin in glide.yaml
-update-typha:
+## Update libcalico and typha pins in glide.yaml
+update-libcalico update-typha:
 	$(DOCKER_GO_BUILD) sh -c '\
         echo "Updating typha to $(TYPHA_VERSION) from $(TYPHA_REPO)"; \
         export OLD_VER=$$(grep --after 50 typha glide.yaml |grep --max-count=1 --only-matching --perl-regexp "version:\s*\K[^\s]+") ;\
