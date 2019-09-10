@@ -11,10 +11,10 @@ require (
 	github.com/kelseyhightower/memkv v0.1.1
 	github.com/onsi/ginkgo v1.8.0
 	github.com/onsi/gomega v1.5.0
-	github.com/projectcalico/libcalico-go v0.0.0-20190824003630-1dc8383c1302
-	github.com/projectcalico/typha v0.0.0-20190903204930-d6439faa3c71
+	github.com/projectcalico/libcalico-go v0.0.0-20190909234443-18c0a7f471bb
+	github.com/projectcalico/typha v0.0.0-20190910002346-0371b3148d28
 	github.com/samuel/go-zookeeper v0.0.0-20190801204459-3c104360edc8 // indirect
-	github.com/sirupsen/logrus v1.2.0
+	github.com/sirupsen/logrus v1.4.2
 	github.com/ugorji/go v1.1.7 // indirect
 	github.com/xordataexchange/crypt v0.0.2 // indirect
 	k8s.io/api v0.0.0-20180628040859-072894a440bd
