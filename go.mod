@@ -12,7 +12,7 @@ require (
 	github.com/onsi/ginkgo v1.8.0
 	github.com/onsi/gomega v1.5.0
 	github.com/pborman/uuid v0.0.0-20150603214016-ca53cad383ca // indirect
-	github.com/projectcalico/libcalico-go v0.0.0-20191007235924-bda281e2d6ef
+	github.com/projectcalico/libcalico-go v0.0.0-20191104213953-1891db7ae73b
 	github.com/projectcalico/typha v0.0.0-20191011154124-bd407e4ddc96
 	github.com/samuel/go-zookeeper v0.0.0-20190801204459-3c104360edc8 // indirect
 	github.com/sirupsen/logrus v1.4.2
