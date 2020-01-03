@@ -280,6 +280,7 @@ github.com/projectcalico/go-yaml v0.0.0-20161201183616-955bc3e451ef h1:Di9BaA9ap
 github.com/projectcalico/go-yaml v0.0.0-20161201183616-955bc3e451ef/go.mod h1:1Ra2BftSa7Go38Gbq1q0bfmBFSSgUv+Cdc3SY8IL/C0=
 github.com/projectcalico/go-yaml-wrapper v0.0.0-20161127220527-598e54215bee h1:yVWsNSlAuYoJ0CznHsYRPiFgsotoj07k00k5rQvGlHM=
 github.com/projectcalico/go-yaml-wrapper v0.0.0-20161127220527-598e54215bee/go.mod h1:UgC0aTQ2KMDxlX3lU/stndk7DMUBJqzN40yFiILHgxc=
+github.com/projectcalico/go-yaml-wrapper v0.0.0-20191112210931-090425220c54/go.mod h1:UgC0aTQ2KMDxlX3lU/stndk7DMUBJqzN40yFiILHgxc=
 github.com/projectcalico/libcalico-go v0.0.0-20190719174102-241d8b0486a3 h1:bKkBycqszdGHOnSZpRi5OwzcVMi052OALvJK6O8tbYo=
 github.com/projectcalico/libcalico-go v0.0.0-20190719174102-241d8b0486a3/go.mod h1:0b/n/rPzNXjhn4ywFcEJuQdA/5olt9UxFIATz57xkbc=
 github.com/projectcalico/libcalico-go v0.0.0-20190824003630-1dc8383c1302 h1:JcGRDdYRVt453H3XbfdZQNqtxDKuRy1fTYQlpz+Rr/E=
@@ -302,8 +303,11 @@ github.com/projectcalico/libcalico-go v0.0.0-20191008175127-399044ecb659 h1:D9RP
 github.com/projectcalico/libcalico-go v0.0.0-20191008175127-399044ecb659/go.mod h1:z4tuFqrAg/423AMSaDamY5LgqeOZ5ETui6iOxDwJ/ag=
 github.com/projectcalico/libcalico-go v0.0.0-20191104213956-8f81e1e344ce h1:E4l3tKFh2Ajh8aWxuRm3azVten6fJ7Zusub8711Bdps=
 github.com/projectcalico/libcalico-go v0.0.0-20191104213956-8f81e1e344ce/go.mod h1:z4tuFqrAg/423AMSaDamY5LgqeOZ5ETui6iOxDwJ/ag=
+github.com/projectcalico/libcalico-go v1.7.2-0.20191223230650-31f24eab280c h1:goBBFihtGCKuI1C6094XvRbxAcIiSnSEKQB52dcEhD4=
+github.com/projectcalico/libcalico-go v1.7.2-0.20191223230650-31f24eab280c/go.mod h1:kKNQ9PSaxaBiy0qQIOTD3ykXIY1Xt1gJugMznn6ybmQ=
 github.com/projectcalico/logrus v0.0.0-20180627202928-fc9bbf2f57995271c5cd6911ede7a2ebc5ea7c6f h1:C2wKicEbskyr0DaQY7AmWNi8xq24cGtboczIBG8vB5M=
 github.com/projectcalico/logrus v0.0.0-20180627202928-fc9bbf2f57995271c5cd6911ede7a2ebc5ea7c6f/go.mod h1:DfgrchabbtEO9wjOz5lVae+XRvjFKKWEA9GTMme6A8g=
+github.com/projectcalico/logrus v0.0.0-20180701205716-fc9bbf2f5799/go.mod h1:DfgrchabbtEO9wjOz5lVae+XRvjFKKWEA9GTMme6A8g=
 github.com/projectcalico/logrus v1.0.6-0.20180701205716-fc9bbf2f5799 h1:dDZ0K34D+kPetUNiAZNVnbHpxNyFhQuTBx9Pvnjyrsc=
 github.com/projectcalico/logrus v1.0.6-0.20180701205716-fc9bbf2f5799/go.mod h1:DfgrchabbtEO9wjOz5lVae+XRvjFKKWEA9GTMme6A8g=
 github.com/projectcalico/typha v0.0.0-20190722040848-03ab421f4fdb h1:TF8W6WMO4mBcUMNs36bGlqD6rgBSPTsrbx9IcD8oesU=
@@ -328,6 +332,8 @@ github.com/projectcalico/typha v0.0.0-20191003041517-d59f99ba14c5 h1:6OdxCKOMYqG
 github.com/projectcalico/typha v0.0.0-20191003041517-d59f99ba14c5/go.mod h1:AJ9CqicY+Pxuo1AfbdTl1s4GmSE/D8ZKxsMo7jQaCvo=
 github.com/projectcalico/typha v0.0.0-20191009174525-7576f11000c9 h1:sJ8CkkmPzffzkO0xrzvM2QR+VftVaFmYW3R7INuDKas=
 github.com/projectcalico/typha v0.0.0-20191009174525-7576f11000c9/go.mod h1:LO41VyfJSsTozm7kJy2Ym26xwPsTvYk4blNS7Tcpa3E=
+github.com/projectcalico/typha v0.7.3-0.20200103001756-52c554096ce9 h1:RP8k7TOQgubcll1+hYQRaBAs13z/P3hkwIgTfbkbSuc=
+github.com/projectcalico/typha v0.7.3-0.20200103001756-52c554096ce9/go.mod h1:qNujhtu2PQePdFDQgg7le3vBKmQJ9EYqkwA+mSo+t5Q=
 github.com/projectcalico/typha v3.8.2+incompatible h1:gzjm+SMnol9qLb3Ny46mTODry3o7zq56PNI9pqeHil4=
 github.com/prometheus/client_golang v0.0.0-20171005112915-5cec1d0429b0/go.mod h1:7SWBe2y4D6OKWSNQJUaRYU/AaXPKyh/dDVn+NZz0KFw=
 github.com/prometheus/client_golang v0.0.0-20180907100926-773f5027234d h1:5uR+Va+FdN8swCl8jWZ/r1sWCavYgailkiakyHWtBus=
@@ -472,7 +478,9 @@ golang.org/x/tools v0.0.0-20190311212946-11955173bddd/go.mod h1:LCzVGOaR6xXOjkQ3
 golang.org/x/tools v0.0.0-20190312151545-0bb0c0a6e846/go.mod h1:LCzVGOaR6xXOjkQ3onu1FJEFr0SW1gC7cKk1uF8kGRs=
 golang.org/x/tools v0.0.0-20190328211700-ab21143f2384/go.mod h1:LCzVGOaR6xXOjkQ3onu1FJEFr0SW1gC7cKk1uF8kGRs=
 golang.org/x/tools v0.0.0-20190524140312-2c0ae7006135/go.mod h1:RgjU9mgBXZiqYHBnxXauZ1Gv1EHHAz9KjViQ78xBX0Q=
+golang.org/x/tools v0.0.0-20190614205625-5aca471b1d59 h1:QjA/9ArTfVTLfEhClDCG7SGrZkZixxWpwNCDiwJfh88=
 golang.org/x/tools v0.0.0-20190614205625-5aca471b1d59/go.mod h1:/rFqwRUd4F7ZHNgwSSTFct+R/Kf4OFW1sUzUTQQTgfc=
+gonum.org/v1/gonum v0.0.0-20190331200053-3d26580ed485 h1:OB/uP/Puiu5vS5QMRPrXCDWUPb+kt8f1KW8oQzFejQw=
 gonum.org/v1/gonum v0.0.0-20190331200053-3d26580ed485/go.mod h1:2ltnJ7xHfj0zHS40VVPYEAAMTa3ZGguvHGBSJeRWqE0=
 gonum.org/v1/netlib v0.0.0-20190313105609-8cb42192e0e0/go.mod h1:wa6Ws7BG/ESfp6dHfk7C6KdzKA7wR7u/rKwOGE66zvw=
 gonum.org/v1/netlib v0.0.0-20190331212654-76723241ea4e/go.mod h1:kS+toOQn6AQKjmKJ7gzohV1XkqsFehRA2FbsbkopSuQ=
@@ -525,6 +533,7 @@ gopkg.in/yaml.v2 v2.2.1 h1:mUhvW9EsL+naU5Q3cakzfE91YhliOondGd6ZrsDBHQE=
 gopkg.in/yaml.v2 v2.2.1/go.mod h1:hI93XBmqTisBFMUTm0b8Fm+jr3Dg1NNxqwp+5A1VGuI=
 gopkg.in/yaml.v2 v2.2.2 h1:ZCJp+EgiOT7lHqUV2J862kp8Qj64Jo6az82+3Td9dZw=
 gopkg.in/yaml.v2 v2.2.2/go.mod h1:hI93XBmqTisBFMUTm0b8Fm+jr3Dg1NNxqwp+5A1VGuI=
+gopkg.in/yaml.v2 v2.2.5/go.mod h1:hI93XBmqTisBFMUTm0b8Fm+jr3Dg1NNxqwp+5A1VGuI=
 honnef.co/go/tools v0.0.0-20190102054323-c2f93a96b099/go.mod h1:rf3lG4BRIbNafJWhAfAdb/ePZxsR/4RtNHQocxwk9r4=
 honnef.co/go/tools v0.0.0-20190523083050-ea95bdfd59fc/go.mod h1:rf3lG4BRIbNafJWhAfAdb/ePZxsR/4RtNHQocxwk9r4=
 k8s.io/api v0.0.0-20180628040859-072894a440bd h1:HzgYeLDS1jLxw8DGr68KJh9cdQ5iZJizG0HZWstIhfQ=
@@ -540,8 +549,10 @@ k8s.io/client-go v8.0.0+incompatible h1:tTI4hRmb1DRMl4fG6Vclfdi6nTM82oIrTT7Hfitm
 k8s.io/client-go v8.0.0+incompatible/go.mod h1:7vJpHMYJwNQCWgzmNV+VYUl1zCObLyodBc8nIyt8L5s=
 k8s.io/client-go v12.0.0+incompatible h1:YlJxncpeVUC98/WMZKC3JZGk/OXQWCZjAB4Xr3B17RY=
 k8s.io/client-go v12.0.0+incompatible/go.mod h1:E95RaSlHr79aHaX0aGSwcPNfygDiPKOVXdmivCIZT0k=
+k8s.io/code-generator v0.0.0-20190814140513-6483f25b1faf h1:AZ9sy4PRHjg4WW8XLJcygC8G2E97KZG8qkN27omL69U=
 k8s.io/code-generator v0.0.0-20190814140513-6483f25b1faf/go.mod h1:PT1SOMszr9TJAi4EL8ncHI85SEdLvzWWYlfJ7ICZeYU=
 k8s.io/gengo v0.0.0-20190128074634-0689ccc1d7d6/go.mod h1:ezvh/TsK7cY6rbqRK0oQQ8IAqLxYwwyPxAX1Pzy0ii0=
+k8s.io/gengo v0.0.0-20190813173942-955ffa8fcfc9 h1:/gJp8cw8+k4AxBNGZ5u5eRoCOzH3WVpY02K654HNiyU=
 k8s.io/gengo v0.0.0-20190813173942-955ffa8fcfc9/go.mod h1:ezvh/TsK7cY6rbqRK0oQQ8IAqLxYwwyPxAX1Pzy0ii0=
 k8s.io/klog v0.0.0-20181102134211-b9b56d5dfc92/go.mod h1:Gq+BEi5rUBO/HRz0bTSXDUcqjScdoY3a9IHpCEIOOfk=
 k8s.io/klog v0.3.1/go.mod h1:Gq+BEi5rUBO/HRz0bTSXDUcqjScdoY3a9IHpCEIOOfk=
